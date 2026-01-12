@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 12px 22px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.resume { background: #ffc107; color:#000; }
+.linkedin { background: #0a66c2; }
+.github { background: #24292e; }
+.email { background: #28a745; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+section {
+  background: white;
+  margin: 30px auto;
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.grid li {
+  background: #eef;
+  padding: 10px;
+  border-radius: 5px;
+  list-style: none;
+}
+
+.card {
+  background: #f9f9ff;
+  padding: 20px;
+  margin: 15px 0;
+  border-left: 5px solid #1e1e2f;
+}
+
+footer {
+  text-align: center;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+}
