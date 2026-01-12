@@ -2,106 +2,99 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Manish Yadav | Backend Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manish Yadav | Backend Engineer</title>
+
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
 
-<header>
+<!-- HERO -->
+<section class="hero">
   <h1>Manish Yadav</h1>
-  <p>Backend Developer | Java • Kotlin • Spring Boot • AWS</p>
+  <p>Senior Backend Engineer • Java • Kotlin • Spring Boot • AWS</p>
 
-  <div class="buttons">
-    <a href="assets/ManishYadav.pdf" class="btn resume" download>
-    <i class="fa-solid fa-download"></i> Resume
-</a>
+  <div class="hero-buttons">
+    <a href="assets/ManishYadav.pdf" class="btn primary" download>
+      <i class="fa-solid fa-file-pdf"></i> Download Resume
+    </a>
 
-    <a href="https://www.linkedin.com/in/manishyy089?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn linkedin">
+    <a href="https://www.linkedin.com/in/manishyy089" target="_blank" class="btn secondary">
       <i class="fa-brands fa-linkedin"></i> LinkedIn
     </a>
-    <!-- <a href="https://github.com" target="_blank" class="btn github">
-      <i class="fa-brands fa-github"></i> GitHub
-    </a> -->
-    <a href="#" class="btn email" onclick="openEmail(); return false;">
-    <i class="fa-solid fa-envelope"></i> Email Me
-</a>
 
-</a>
-
+    <a href="#" class="btn secondary" onclick="openEmail(); return false;">
+      <i class="fa-solid fa-envelope"></i> Email
+    </a>
   </div>
-</header>
-
-<section>
-<h2>Professional Summary</h2>
-<p>
-Backend engineer with 3+ years of experience building scalable APIs, payment systems,
-billing engines and enterprise backend platforms using Java, Kotlin, Spring Boot and PostgreSQL.
-Experienced in AWS deployments, Redis caching and secure transaction processing.
-</p>
 </section>
 
-<section>
-<h2>Core Skills</h2>
-<ul class="grid">
-<li>Java, Kotlin</li>
-<li>Spring Boot, Spring Security</li>
-<li>REST APIs, Webhooks</li>
-<li>PostgreSQL, MySQL</li>
-<li>Redis</li>
-<li>AWS (EC2, S3, RDS, IAM)</li>
-<li>Docker, Nginx</li>
-<li>Linux, Git</li>
-</ul>
+<!-- SUMMARY -->
+<section class="container">
+  <h2>Professional Summary</h2>
+  <p>
+    Backend Engineer with 3+ years of experience designing scalable APIs, payment platforms,
+    billing engines, and secure enterprise systems using Java, Kotlin, Spring Boot, PostgreSQL and AWS.
+  </p>
 </section>
 
-<section>
-<h2>Experience Highlights</h2>
-<ul>
-<li>Designed microservices for payments, billing, document verification and user management.</li>
-<li>Integrated multiple payment gateways including card vault, refunds and webhooks.</li>
-<li>Built session-based billing and API metering system.</li>
-<li>Deployed Spring Boot services on AWS EC2 with PostgreSQL RDS.</li>
-<li>Implemented Redis caching to improve API performance.</li>
-</ul>
+<!-- SKILLS -->
+<section class="container">
+  <h2>Core Skills</h2>
+  <div class="grid">
+    <div>Java & Kotlin</div>
+    <div>Spring Boot & Security</div>
+    <div>REST APIs & Webhooks</div>
+    <div>PostgreSQL & MySQL</div>
+    <div>Redis</div>
+    <div>AWS (EC2, S3, RDS)</div>
+    <div>Docker & Nginx</div>
+    <div>Linux & Git</div>
+  </div>
 </section>
 
-<section>
-<h2>Major Projects</h2>
+<!-- PROJECTS -->
+<section class="container">
+  <h2>Key Projects</h2>
 
-<div class="card">
-<h3>Payment Gateway Platform</h3>
-<p>Handles card payments, refunds, customer vault and webhook processing.</p>
-<p><b>Tech:</b> Java, Kotlin, Spring Boot, PostgreSQL, Redis</p>
-</div>
+  <div class="cards">
+    <div class="card">
+      <h3>Payment Gateway Platform</h3>
+      <p>Card payments, refunds, customer vault, and secure webhook processing.</p>
+      <small>Java, Spring Boot, PostgreSQL, Redis</small>
+    </div>
 
-<div class="card">
-<h3>Billing & API Metering System</h3>
-<p>Tracks every API call and session, enforces limits and generates billing data.</p>
-</div>
+    <div class="card">
+      <h3>Billing & API Metering</h3>
+      <p>Tracks sessions, API usage, billing limits and real-time enforcement.</p>
+      <small>Spring Boot, Redis, PostgreSQL</small>
+    </div>
 
-<div class="card">
-<h3>Document Verification System</h3>
-<p>Document upload, tier-based validation, expiry tracking and email notifications.</p>
-</div>
-
+    <div class="card">
+      <h3>Document Verification System</h3>
+      <p>Uploads, tier-based validation, expiry alerts and email notifications.</p>
+      <small>AWS S3, Spring Boot</small>
+    </div>
+  </div>
 </section>
 
-<section>
-<h2>Cloud & DevOps</h2>
-<ul>
-<li>AWS EC2 for backend hosting</li>
-<li>AWS RDS for PostgreSQL</li>
-<li>AWS S3 for document storage</li>
-<li>Dockerized Spring Boot applications</li>
-<li>Nginx reverse proxy</li>
-</ul>
+<!-- CLOUD -->
+<section class="container">
+  <h2>Cloud & DevOps</h2>
+  <ul>
+    <li>AWS EC2, RDS, S3</li>
+    <li>Dockerized microservices</li>
+    <li>Nginx reverse proxy</li>
+    <li>Linux server deployment</li>
+  </ul>
 </section>
 
 <footer>
-<footer>
-  © 2026 Manish Yadav • Built with ❤️ • Hosted securely on HTTPS
+  © 2026 Manish Yadav • Backend Engineer • Hosted on HTTPS
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
