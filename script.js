@@ -1,24 +1,17 @@
-// document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
 
-//     // Make all sections visible by default
-//     const sections = document.querySelectorAll("section");
-//     sections.forEach(sec => {
-//         sec.style.opacity = 1;
-//         sec.style.transform = "translateY(0)";
-//     });
+  document.querySelectorAll(".skill").forEach(card => {
 
-//     // Button glow
-//     const buttons = document.querySelectorAll(".btn");
-//     buttons.forEach(btn => {
-//         btn.addEventListener("mouseenter", () => {
-//             btn.style.boxShadow = "0 0 15px rgba(255,255,255,0.6)";
-//         });
-//         btn.addEventListener("mouseleave", () => {
-//             btn.style.boxShadow = "none";
-//         });
-//     });
+    card.addEventListener("touchstart", () => {
+      document.querySelectorAll(".skill").forEach(c => c.classList.remove("active"));
+      card.classList.add("active");
+    });
 
-// });
+  });
+
+});
+
+
 
 function openEmail() {
   const user = "manishyy089";
