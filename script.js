@@ -19,7 +19,7 @@ function openEmail() {
   window.location.href = "mailto:" + user + "@" + domain;
 }
 
-const resumeURL = "https://manishyadav.github.io/assets/ManishYadav.pdf";
+const resumeURL = "https://dev-manishyadav089.github.io/assets/ManishYadav.pdf";
 
 // Generate QR Code
 new QRCode(document.getElementById("qr-box"), {

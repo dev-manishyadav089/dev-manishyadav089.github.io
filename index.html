@@ -16,32 +16,40 @@
 
 <!-- LEFT PROFILE -->
 <aside class="profile">
-  <img src="assets/profile1.jpg" alt="Manish Yadav">
+  <img src="assets/profile1.jpg" alt="Manish Yadav" class="profile-pic">
+
   <h1>Manish Yadav</h1>
   <p>Java Backend Engineer</p>
-
+  <br>
   <div class="profile-buttons">
+
     <a href="assets/ManishYadav.pdf" download class="btn primary">
-      <i class="fa-solid fa-file-pdf"></i> Resume
+      <span class="icon"><i class="fa-solid fa-file-pdf"></i></span>
+      <span class="label">Resume</span>
     </a>
-
+    
     <a href="https://www.linkedin.com/in/manishyy089" target="_blank" class="btn secondary">
-      <i class="fa-brands fa-linkedin"></i> LinkedIn
+      <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
+      <span class="label">LinkedIn</span>
     </a>
-
+    
     <a href="#" class="btn secondary" onclick="openEmail(); return false;">
-      <i class="fa-solid fa-envelope"></i> Email
+      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+      <span class="label">Email</span>
     </a>
+    
+
   </div>
-  <section class="qr-section">
-    <h2>Scan to Download Resume</h2>
-  
+
+  <!-- QR Section -->
+  <div class="qr-section">
+    <h3>Scan to Download Resume</h3>
     <div id="qr-box"></div>
-  
-    <div id="qr-reader" style="width:280px;margin:auto;"></div>
-  </section>
-  
+    <div id="qr-reader"></div>
+  </div>
+
 </aside>
+
 
 <!-- RIGHT CONTENT -->
 <main class="content">
@@ -68,6 +76,7 @@ billing engines, and cloud-based backend systems using Java, Kotlin, Spring Boot
     <div class="skill">Mockito</div>
     <div class="skill">Nginx</div>
     <div class="skill">Postman</div>
+    <div class="skill">Swagger</div>
   </div>
   </section>
   
@@ -97,7 +106,7 @@ billing engines, and cloud-based backend systems using Java, Kotlin, Spring Boot
 <section>
 <h2>Cloud & DevOps</h2>
 <ul>
-  <li>AWS EC2, RDS, S3</li>
+  <li>AWS EC2, RDS, S3, AWS LightSail</li>
   <li>Dockerized microservices</li>
   <li>Nginx reverse proxy</li>
 </ul>

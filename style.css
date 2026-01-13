@@ -9,6 +9,7 @@ body {
   color: #e5e7eb;
 }
 
+/* LAYOUT */
 .layout {
   display: flex;
   min-height: 100vh;
@@ -25,32 +26,52 @@ body {
 .profile img {
   width: 120px;
   height: 120px;
+  border-radius: 10px;     /* square with soft corners */
+  object-fit: cover;
   border: 3px solid #38bdf8;
   margin-bottom: 20px;
 }
+
 
 .profile h1 {
   color: #38bdf8;
 }
 
+/* PROFILE BUTTONS */
 .profile-buttons {
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  margin-top: 20px;
 }
 
-/* BUTTONS */
+/* BUTTON */
 .btn {
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  text-decoration: none;
   display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.25s ease;
   justify-content: center;
-  gap: 8px;
 }
 
+/* ICON FIX */
+.btn .icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn .icon i {
+  font-size: 16px;
+}
+
+/* Button colors */
 .primary {
   background: #38bdf8;
   color: #020617;
@@ -60,6 +81,25 @@ body {
   background: #1e293b;
   color: white;
   border: 1px solid #38bdf8;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(56,189,248,.4);
+}
+
+/* QR */
+.qr-section {
+  margin-top: 50px;
+}
+
+#qr-box {
+  width: 220px;
+  height: 220px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* RIGHT CONTENT */
@@ -77,7 +117,7 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* FORCE responsive grid for Core Skills */
+/* SKILLS GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -89,33 +129,15 @@ h2 {
   border-radius: 12px;
   border: 1px solid rgba(0,255,255,.25);
   background: #1e293b;
-  color: #fff;
   text-align: center;
   font-weight: 600;
-  transition: all .25s ease;
-  cursor: pointer;
+  transition: 0.25s ease;
 }
 
-/* Desktop hover */
 .skill:hover {
   border-color: #00f2ff;
-  box-shadow: 0 0 15px rgba(0,242,255,.9);
+  box-shadow: 0 0 15px rgba(0,242,255,.8);
   transform: translateY(-5px);
-}
-
-/* Mobile tap */
-.skill.active {
-  border-color: #00f2ff;
-  box-shadow: 0 0 15px rgba(0,242,255,.9);
-  transform: translateY(-5px);
-}
-
-
-/* Mobile layout */
-@media (max-width: 600px) {
-  section .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* PROJECTS */
@@ -129,6 +151,23 @@ h2 {
   background: #1e293b;
   padding: 20px;
   border-radius: 10px;
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #38bdf8;
+  box-shadow: 0 10px 30px rgba(56,189,248,0.25);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  color: rgba(255,255,255,0.7);
+  font-size: 14px;
+  border-top: 1px solid rgba(0,255,255,0.15);
 }
 
 /* MOBILE */
@@ -140,47 +179,22 @@ h2 {
   .profile {
     width: 100%;
   }
+
+  .content {
+    padding: 30px 20px;
+  }
+}
+/* Hard-fix FontAwesome misalignment */
+.profile-buttons .icon {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
 }
 
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 10px;
-  transition: 0.3s ease;
-  border: 1px solid transparent;
+.profile-buttons .icon i {
+  line-height: 1;
+  margin: 0;
 }
-
-.card:hover {
-  transform: translateY(-8px);
-  border: 1px solid #38bdf8;
-  box-shadow: 0 10px 30px rgba(56,189,248,0.25);
-}
-
-footer {
-  text-align: center;
-  padding: 20px 10px;
-  margin-top: 60px;
-  color: rgba(255,255,255,0.7);
-  font-size: 14px;
-  border-top: 1px solid rgba(0,255,255,0.15);
-}
-.qr-section {
-  margin-top: 50px;
-  text-align: center;
-}
-
-#qr-box {
-  width: 220px;
-  height: 220px;
-  padding: 10px;
-  margin: 20px auto;
-  border-radius: 0;              /* make square */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-
 
 
