@@ -305,3 +305,22 @@ footer {
     text-align: center;
   }
 }
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+}
+
+/* Mobile only */
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px; /* 👈 space between buttons */
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+  }
+}
