@@ -6,116 +6,227 @@
 <title>Manish Yadav | Backend Engineer</title>
 
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-<script src="https://unpkg.com/html5-qrcode@2.3.9/minified/html5-qrcode.min.js"></script>
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="navbar-container">
+    <h2 class="logo">Manish Yadav</h2>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-<div class="layout">
 
-<!-- LEFT PROFILE -->
-<aside class="profile">
-  <img src="assets/profile1.jpg" alt="Manish Yadav" class="profile-pic">
+<!-- HERO + ABOUT WRAPPER -->
+<section id="about" class="hero-about reveal">
 
-  <h1>Manish Yadav</h1>
-  <p>Java Backend Engineer</p>
-  <br>
-  <div class="profile-buttons">
+  <!-- LEFT: HERO -->
+  <div class="hero-left">
+    <h1>Hi, I’m Manish</h1>
+    <p>Java Backend Engineer</p>
 
-    <a href="assets/ManishYadav.pdf" download class="btn primary">
-      <span class="icon"><i class="fa-solid fa-file-pdf"></i></span>
-      <span class="label">Resume</span>
-    </a>
-    
-    <a href="https://www.linkedin.com/in/manishyy089" target="_blank" class="btn secondary">
-      <span class="icon"><i class="fa-brands fa-linkedin-in"></i></span>
-      <span class="label">LinkedIn</span>
-    </a>
-    
-    <a href="#" class="btn secondary" onclick="openEmail(); return false;">
-      <span class="icon"><i class="fa-solid fa-envelope"></i></span>
-      <span class="label">Email</span>
-    </a>
-    
-
+    <div class="hero-buttons">
+      <a href="https://drive.google.com/file/d/1Kj6fy4gYEVvsCD_BNCc_6xnu5Lq_qm0a/view?usp=drive_link" download class="btn primary">
+        Download Resume
+      </a>
+      &nbsp
+      <a href="#contact" class="btn secondary">
+        Contact Me
+      </a>
+    </div>
   </div>
 
-  <!-- QR Section -->
-  <div class="qr-section">
-    <h3>Scan to Download Resume</h3>
-    <div id="qr-box"></div>
-    <div id="qr-reader"></div>
+  <!-- RIGHT: ABOUT -->
+  <div class="hero-right">
+
+    <p>
+      Backend Engineer with 3+ years of experience building scalable payment
+      platforms, billing engines, and cloud-native backend systems.
+    </p>
+
+    <p>
+      I specialize in Java, Kotlin, Spring Boot, distributed systems,
+      and AWS. I have hands-on experience with payment gateways,
+      customer vaults, webhook handling, and real-time billing systems.
+    </p>
+
+    <p>
+      Passionate about clean architecture, performance optimization,
+      and building reliable systems used at scale.
+    </p>
   </div>
 
-</aside>
-
-
-<!-- RIGHT CONTENT -->
-<main class="content">
-
-<section>
-<h2>About Me</h2>
-<p>
-Backend Engineer with 3+ years of experience building payment platforms,
-billing engines, and cloud-based backend systems using Java, Kotlin, Spring Boot and AWS.
-</p>
 </section>
 
-<section id="skills">
-  <h2>Core Skills</h2>
-  <div class="grid">
-    <div class="skill">Java</div>
-    <div class="skill">Kotlin</div>
-    <div class="skill">Spring Boot</div>
-    <div class="skill">REST APIs</div>
-    <div class="skill">Redis</div>
-    <div class="skill">AWS</div>
-    <div class="skill">RabbitMQ</div>
-    <div class="skill">PostgreSQL</div>
-    <div class="skill">Mockito</div>
-    <div class="skill">Nginx</div>
-    <div class="skill">Postman</div>
-    <div class="skill">Swagger</div>
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <h2>Technical skills</h2>
+
+  <div class="skills-cards">
+
+    <div class="skill-card">
+      <i class="fa-brands fa-java"></i>
+      <span>Java</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-code"></i>
+      <span>Kotlin</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-leaf"></i>
+      <span>Spring Boot</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-plug"></i>
+      <span>REST APIs</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-database"></i>
+      <span>Redis</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-aws"></i>
+      <span>AWS</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-envelope-circle-check"></i>
+      <span>RabbitMQ</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-database"></i>
+      <span>PostgreSQL</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-brands fa-docker"></i>
+      <span>Docker</span>
+    </div>
+
+    <div class="skill-card">
+      <i class="fa-solid fa-server"></i>
+      <span>Nginx</span>
+    </div>
+
   </div>
-  </section>
-  
-
-<section>
-<h2>Key Projects</h2>
-<div class="cards">
-
-  <div class="card">
-    <h3>Payment Gateway Platform</h3>
-    <p>Card payments, refunds, customer vault, and webhook processing.</p>
-  </div>
-
-  <div class="card">
-    <h3>Billing & API Metering</h3>
-    <p>Tracks sessions, API usage, and real-time billing.</p>
-  </div>
-
-  <div class="card">
-    <h3>Document Verification System</h3>
-    <p>Uploads, tier validation, expiry tracking and notifications.</p>
-  </div>
-
-</div>
 </section>
 
-<section>
-<h2>Cloud & DevOps</h2>
-<ul>
-  <li>AWS EC2, RDS, S3, AWS LightSail</li>
-  <li>Dockerized microservices</li>
-  <li>Nginx reverse proxy</li>
-</ul>
+
+<!-- PROJECTS -->
+<section id="projects" class="section reveal">
+  <h2>Projects</h2>
+
+  <div class="project-cards">
+
+    <div class="project-card">
+      <h3>Payment Gateway Platform</h3>
+      <p>
+        Built and maintained card payment processing, refunds,
+        customer vaults, and webhook handling for real-time transactions.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Billing & API Metering</h3>
+      <p>
+        Designed session-based billing with API usage tracking,
+        rate limits, and real-time billing logs.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Document Verification System</h3>
+      <p>
+        Implemented document upload workflows, tier validation,
+        expiry tracking, and automated email notifications.
+      </p>
+    </div>
+
+  </div>
 </section>
 
-</main>
-</div>
+<!-- EXPERIENCE -->
+<!-- <section id="experience" class="section reveal">
+  <h2>Experience</h2>
+
+  <div class="experience-cards">
+
+    <div class="experience-card">
+      <h3>Software Engineer – Backend</h3>
+      <span>3+ Years Experience</span>
+      <p>
+        Working on fintech platforms focusing on payments,
+        scalable backend services, cloud deployments,
+        and performance optimization.
+      </p>
+    </div>
+
+  </div>
+</section> -->
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <h2>Contact Me</h2>
+
+  <!-- HEADINGS -->
+  <div class="contact-headings">
+    <h3 class="left-heading">
+      Feel free to contact me for any work or suggestions below.
+    </h3>
+    <h3 class="right-heading">
+      Scan the QR code to download my resume
+    </h3>
+  </div>
+
+  <div class="contact-wrapper">
+
+    <!-- LEFT -->
+    <div class="contact-info">
+     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=manishyy089@gmail.com"
+   target="_blank">
+  <i class="fa-solid fa-envelope"></i> Email
+</a>
+
+
+
+      <a href="https://www.linkedin.com/in/manishyy089" target="_blank">
+        <i class="fa-brands fa-linkedin"></i> LinkedIn
+      </a>
+
+      <a href="https://github.com/" target="_blank">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="qr-section">
+      <div id="resume-qr"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- FOOTER -->
 <footer>
-  © 2026 Manish Yadav • Built with ❤️ • Hosted on GitHub Pages
+  © 2026 Manish Yadav • All rights reserved.
 </footer>
 
 <script src="script.js"></script>
